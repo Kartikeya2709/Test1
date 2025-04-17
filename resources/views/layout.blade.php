@@ -5,10 +5,12 @@
     <title>My Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-light">
+<body class="bg-light" style="background-image: url('{{ asset('images/dd.jpg') }}'); background-size: cover;  background-repeat: no-repeat;">
+
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 mb-4">
-        <a class="navbar-brand" href="{{ route('posts.index') }}">MyBlog</a>
+        <a class="navbar-brand" href="{{ route('posts.index') }}">KARTIKEYA`S BLOG  </a>
+        {{-- <a class="navbar-brand" ></a> --}}
 
         <div class="ms-auto">
             @guest
@@ -44,7 +46,8 @@
             }
         }
     </script>
-
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
 </body>
 </html>

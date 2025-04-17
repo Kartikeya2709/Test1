@@ -1,7 +1,8 @@
 @extends('layout')
 
 @section('content')
-    <div class="d-flex justify-content-between align-items-center mb-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4" >
         <h2>All Posts</h2>
         @auth
             <a href="{{ route('posts.create') }}" class="btn btn-primary">+ New Post</a>
